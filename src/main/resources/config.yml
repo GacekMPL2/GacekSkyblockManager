@@ -4,8 +4,5 @@ sbmanager:
 
   prefix: "&a&lSKYBLOCK &f»"
 
-  #### ADMINCHAT ####
-
-  hoverytmessage: "&7Kliknij tutaj, aby otworzyć!"
   ### INNE ###
   worldName: "spawn"
