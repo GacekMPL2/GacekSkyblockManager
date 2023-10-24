@@ -1,6 +1,6 @@
 package me.gacekmpl2.gacekskyblockmanger.listeners;
 
-import me.gacekmpl2.gacekskyblockmanger.GacekSkyblockManger;
+import me.gacekmpl2.gacekskyblockmanger.GacekSkyblockManager;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -34,7 +34,7 @@ public class BreakEvent implements Listener {
 
         event.setDropItems(false);
         block.getWorld().dropItemNaturally(block.getLocation(), new ItemStack(Material.WHEAT, 1));
-        Bukkit.getScheduler().runTaskLater(GacekSkyblockManger.getInstance(),() -> {
+        Bukkit.getScheduler().runTaskLater(GacekSkyblockManager.getInstance(),() -> {
             block.setType(Material.WHEAT);
             BlockData blockData = block.getBlockData();
             if (blockData instanceof Ageable) {

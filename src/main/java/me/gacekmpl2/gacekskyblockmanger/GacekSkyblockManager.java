@@ -13,9 +13,9 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.Random;
 
-public final class GacekSkyblockManger extends JavaPlugin {
+public final class GacekSkyblockManager extends JavaPlugin {
 
-    private static GacekSkyblockManger instance;
+    private static GacekSkyblockManager instance;
     @Override
     public void onEnable() {
         instance = this;
@@ -50,7 +50,7 @@ public final class GacekSkyblockManger extends JavaPlugin {
         getLogger().info("[GacekSkyblockManager] Plugin disabled.");
     }
 
-    public static GacekSkyblockManger getInstance() {
+    public static GacekSkyblockManager getInstance() {
         return instance;
     }
 }
