@@ -1,6 +1,6 @@
 name: GacekSkyblockManager
 version: 1.0
-main: me.gacekmpl2.gacekskyblockmanger.GacekSkyblockManger
+main: me.gacekmpl2.gacekskyblockmanager.GacekSkyblockManager
 api-version: '1.20'
 authors: [GacekMPL2]
 commands:
