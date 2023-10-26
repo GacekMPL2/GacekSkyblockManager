@@ -1,7 +1,8 @@
-package me.gacekmpl2.gacekskyblockmanger.commands;
+package me.gacekmpl2.gacekskyblockmanager.commands;
 
-import me.gacekmpl2.gacekskyblockmanger.essentials.ChatUtils;
-import me.gacekmpl2.gacekskyblockmanger.essentials.ConfigUtils;
+import me.gacekmpl2.gacekskyblockmanager.GacekSkyblockManager;
+import me.gacekmpl2.gacekskyblockmanager.essentials.ChatUtils;
+import me.gacekmpl2.gacekskyblockmanager.essentials.ConfigUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -17,6 +18,7 @@ public class GSkyBlockCommand implements CommandExecutor {
                 if (args[0].equalsIgnoreCase("reload")) {
                     try {
                         ConfigUtils.loadconfig();
+                        GacekSkyblockManager.getInstance().loadStuff();
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }

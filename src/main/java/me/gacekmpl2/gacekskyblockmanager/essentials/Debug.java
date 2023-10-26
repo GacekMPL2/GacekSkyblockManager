@@ -1,4 +1,4 @@
-package me.gacekmpl2.gacekskyblockmanger.essentials;
+package me.gacekmpl2.gacekskyblockmanager.essentials;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;

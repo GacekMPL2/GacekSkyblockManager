@@ -1,4 +1,4 @@
-package me.gacekmpl2.gacekskyblockmanger.listeners;
+package me.gacekmpl2.gacekskyblockmanager.listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

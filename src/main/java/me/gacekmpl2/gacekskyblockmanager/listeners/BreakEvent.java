@@ -1,6 +1,6 @@
-package me.gacekmpl2.gacekskyblockmanger.listeners;
+package me.gacekmpl2.gacekskyblockmanager.listeners;
 
-import me.gacekmpl2.gacekskyblockmanger.GacekSkyblockManager;
+import me.gacekmpl2.gacekskyblockmanager.GacekSkyblockManager;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -11,7 +11,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 
-import static me.gacekmpl2.gacekskyblockmanger.essentials.ConfigUtils.worldName;
+import static me.gacekmpl2.gacekskyblockmanager.essentials.ConfigUtils.worldName;
 
 public class BreakEvent implements Listener {
 

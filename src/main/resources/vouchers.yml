@@ -1,0 +1,22 @@
+vouchers:
+  voucher100:
+    type: MONEY
+    value: 100.0
+    item:
+      material: GOLD_NUGGET
+      amount: 1
+      name: "&eBon na 100$"
+      enchants:
+        DURABILITY: 10
+      hideenchants: true
+  voucher500:
+    type: COMMAND
+    commands:
+      - "lp user %player% parent add group.vip"
+    item:
+      material: GOLD_INGOT
+      amount: 1
+      name: "&e&lBon na VIPA"
+      enchants:
+        DURABILITY: 50
+      hideenchants: true

@@ -1,4 +1,4 @@
-package me.gacekmpl2.gacekskyblockmanger.essentials;
+package me.gacekmpl2.gacekskyblockmanager.essentials;
 
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -6,7 +6,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import java.io.File;
 import java.io.IOException;
 
-import static me.gacekmpl2.gacekskyblockmanger.essentials.Debug.log;
+import static me.gacekmpl2.gacekskyblockmanager.essentials.Debug.log;
 
 public class ConfigUtils {
 
@@ -23,7 +23,7 @@ public class ConfigUtils {
 
     public static YamlConfiguration load(String configName) throws IOException {
 
-        File file = new File("plugins/" + File.separator + "GacekSkyblockManger", configName + ".yml");
+        File file = new File("plugins/" + File.separator + "GacekSkyblockManager", configName + ".yml");
 
         if (file.exists()) {
             YamlConfiguration yaml = YamlConfiguration.loadConfiguration(file);
