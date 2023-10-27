@@ -3,7 +3,8 @@ package me.gacekmpl2.gacekskyblockmanager.voucher;
 
 import me.gacekmpl2.gacekskyblockmanager.GacekSkyblockManager;
 import me.gacekmpl2.gacekskyblockmanager.essentials.ChatUtils;
-import me.gacekmpl2.gacekskyblockmanager.essentials.ConfigVoucherUtils;
+
+import me.gacekmpl2.gacekskyblockmanager.essentials.ConfigUtils;
 import me.gacekmpl2.gacekskyblockmanager.essentials.ItemCreator;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -17,9 +18,9 @@ public class VoucherController {
 
     public void load() {
         this.vouchers = new HashMap<>();
-        YamlConfiguration configuration = ConfigVoucherUtils.load("vouchers.yml", (Plugin) GacekSkyblockManager.getInstance());
+        YamlConfiguration configuration = ConfigUtils.load("vouchers.yml", (Plugin) GacekSkyblockManager.getInstance());
         for (String key : configuration.getConfigurationSection("vouchers").getKeys(false)) {
-            ItemStack itemStack = ConfigVoucherUtils.getItemstack(configuration, "vouchers." + key + ".item");
+            ItemStack itemStack = ConfigUtils.getItemstack(configuration, "vouchers." + key + ".item");
             VoucherType voucherType = VoucherType.valueOf(configuration.getString("vouchers." + key + ".type"));
             if (voucherType.equals(VoucherType.MONEY)) {
                 this.vouchers.put(itemStack, new Voucher(key, voucherType, configuration.getDouble("vouchers." + key + ".value"), itemStack));

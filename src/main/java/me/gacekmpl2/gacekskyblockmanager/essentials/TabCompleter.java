@@ -23,7 +23,7 @@ public class TabCompleter implements org.bukkit.command.TabCompleter {
         } else if (command.getName().equalsIgnoreCase("voucher")) {
             Player player = (Player) sender;
             List<String> vouchersTab = new ArrayList<>();
-            YamlConfiguration yaml = ConfigVoucherUtils.load("vouchers.yml", (Plugin) GacekSkyblockManager.getInstance());
+            YamlConfiguration yaml = ConfigUtils.load("vouchers.yml", (Plugin) GacekSkyblockManager.getInstance());
 
             if (sender.hasPermission("vouchers.admin")) {
                 if (args.length == 1) {

@@ -3,7 +3,6 @@ package me.gacekmpl2.gacekskyblockmanager;
 import me.gacekmpl2.gacekskyblockmanager.commands.GSkyBlockCommand;
 import me.gacekmpl2.gacekskyblockmanager.commands.VoucherCommand;
 import me.gacekmpl2.gacekskyblockmanager.essentials.ConfigUtils;
-import me.gacekmpl2.gacekskyblockmanager.essentials.ConfigVoucherUtils;
 import me.gacekmpl2.gacekskyblockmanager.essentials.Debug;
 import me.gacekmpl2.gacekskyblockmanager.essentials.TabCompleter;
 import me.gacekmpl2.gacekskyblockmanager.listeners.ArmorSystemEvent;
@@ -33,7 +32,7 @@ public final class GacekSkyblockManager extends JavaPlugin {
     public void onEnable() {
         instance = this;
         voucherController = new VoucherController();
-        ConfigVoucherUtils.setPlugin((Plugin)this);
+        ConfigUtils.setPlugin((Plugin)this);
         if (!setupEconomy()) {
             Debug.log(String.format("[%s] - Disabled due to no Vault dependency found!", new Object[] { getDescription().getName() }));
             getServer().getPluginManager().disablePlugin((Plugin)this);
