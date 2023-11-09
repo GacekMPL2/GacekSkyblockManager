@@ -52,7 +52,6 @@ public final class GacekSkyblockManager extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new BreakEvent(), instance);
 
 
-
         getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
             Random r = new Random();
 
