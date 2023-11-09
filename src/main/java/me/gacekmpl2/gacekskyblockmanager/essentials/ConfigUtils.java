@@ -40,7 +40,6 @@ public class ConfigUtils {
         if (file.exists()) {
             YamlConfiguration yaml = YamlConfiguration.loadConfiguration(file);
             if (yaml.getValues(false).isEmpty()) {
-                log("Plik konfiguracyjny jest pusty.");
                 setValues().save(file);
                 return yaml;
             }
@@ -133,8 +132,5 @@ public class ConfigUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    private static void log(String message) {
     }
 }
