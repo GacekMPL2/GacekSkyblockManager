@@ -1,0 +1,19 @@
+name: GacekSkyblockManager
+version: 1.0
+main: me.gacekmpl2.gacekskyblockmanager.GacekSkyblockManager
+api-version: '1.20'
+authors: [GacekMPL2]
+depend:
+  - Vault
+  - NBTAPI
+commands:
+  gskyblock:
+    usage: /gskyblock
+  voucher:
+    usage: /voucher
+    aliases: [ vouchers ]
+
+permissions:
+  skyblockmanager.*:
+    children:
+      skyblockmanager.command.reload: true

@@ -1,0 +1,7 @@
+sbmanager:
+  ###### GLOBAL #####
+
+  prefix: "&a&lSKYBLOCK &f»"
+
+  ### INNE ###
+  worldName: "spawn"
