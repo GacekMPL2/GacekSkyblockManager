@@ -28,7 +28,6 @@ public class GSkyBlockCommand implements CommandExecutor {
                 ChatUtils.sendMessage(sender, "&cBrak uprawnień!");
                 return true;
             }
-
         }
         return true;
     }

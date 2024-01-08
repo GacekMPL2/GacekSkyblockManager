@@ -40,17 +40,13 @@ public final class GacekSkyblockManager extends JavaPlugin {
         }
         loadStuff();
         getLogger().info("[GacekSkyblockManager] Plugin enabled.");
-
         getCommand("voucher").setExecutor((CommandExecutor)new VoucherCommand());
-        Objects.requireNonNull(getCommand("voucher")).setTabCompleter((TabCompleter)new TabCompleter());
-        getServer().getPluginManager().registerEvents((Listener)new InteractListener(), (Plugin)this);
-
-
+        getCommand("voucher").setTabCompleter((TabCompleter)new TabCompleter());
         getCommand("gskyblock").setExecutor(new GSkyBlockCommand());
-        Objects.requireNonNull(getCommand("gskyblock")).setTabCompleter((TabCompleter)new TabCompleter());
+        getCommand("gskyblock").setTabCompleter((TabCompleter)new TabCompleter());
         getServer().getPluginManager().registerEvents(new PortalListener(), this);
         getServer().getPluginManager().registerEvents(new BreakEvent(), instance);
-
+        getServer().getPluginManager().registerEvents((Listener)new InteractListener(), (Plugin)this);
 
         getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
             Random r = new Random();
